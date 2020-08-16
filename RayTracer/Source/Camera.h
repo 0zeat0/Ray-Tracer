@@ -4,6 +4,7 @@
 
 struct Camera
 {
+	Camera();
 	Camera(Vector3 position, Vector3 viewDirection, float focalLength);
 	Vector3 position;
 	float focalLength;

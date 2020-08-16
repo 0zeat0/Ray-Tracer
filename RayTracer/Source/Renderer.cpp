@@ -8,7 +8,7 @@
 
 #include "TraceResult.h"
 
-Renderer::Renderer(unsigned int width, unsigned int height, Scene& scene, Camera camera, Color backgroundColor, float ambientIntensity) : 
+Renderer::Renderer(unsigned int width, unsigned int height, Scene& scene, const Camera& camera, Color backgroundColor, float ambientIntensity) :
 	width(width),
 	height(height),
 	scene(scene),
@@ -34,6 +34,7 @@ Renderer::~Renderer()
 {
 	delete[] image;
 }
+
 
 //Finds ray origin and direction by pixel coordinates
 Ray Renderer::ComputeRay(unsigned int i, unsigned int j)

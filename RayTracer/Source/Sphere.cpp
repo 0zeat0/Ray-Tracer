@@ -4,7 +4,7 @@
 
 Sphere::Sphere() : center(Vector3()), radius(1.0f), material(Material()){}
 Sphere::Sphere(Vector3 center, float radius) : center(center), radius(radius), material(Material()) {}
-Sphere::Sphere(Vector3 center, float radius, Material material) : center(center), radius(radius), material(material) {}
+Sphere::Sphere(Vector3 center, float radius, const Material& material) : center(center), radius(radius), material(material) {}
 
 Material Sphere::GetMaterial()
 {

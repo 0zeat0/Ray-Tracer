@@ -9,7 +9,7 @@
 class Renderer
 {
 public:
-	Renderer(unsigned int width, unsigned int height, Scene& scene, Camera camera, Color backgroundColor, float ambientIntensity);
+	Renderer(unsigned int width, unsigned int height, Scene& scene, const Camera& camera, Color backgroundColor, float ambientIntensity);
 	~Renderer();
 	Ray ComputeRay(unsigned int i, unsigned int j);
 	void Render(void(*OnRenderFinished)(unsigned char* result, unsigned int width, unsigned int height));
